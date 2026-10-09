@@ -137,9 +137,10 @@ the next implementer spends the day on their own catalog rather than on these.
 
 ## Layout
 
-- `src/sdcdcatus/`: `package.py` and `model.py` (reused from `sdc_cdif`: a model's package, from a directory or the
-  public catalog, and its record tree), `dcatus.py` (the Catalog), `cli.py`, `data/catalog.yaml` (the declared input
-  for the sample).
+- The model's package is read with [`sdcreader`](https://github.com/SemanticDataCharter/sdcreader) (`load_package`,
+  `fetch_package`, `read_model`): the record tree, its leaves, the enumerated values with their codes, the model's
+  Dublin Core with SDCStudio's defaults as unset. The package format is documented there, once.
+- `src/sdcdcatus/`: `dcatus.py` (the Catalog), `cli.py`, `data/catalog.yaml` (the declared input for the sample).
 - `data/dcat-us-4996591/`: GSA's definitions, examples, validator and README at the pin.
 - `samples/nhanes-participant/`: the model's package as fetched and the `data.json` written from it.
 - `build/snapshot_dcat_us.py`: re-creates `data/` from a read-only clone of `GSA/dcat-us` at the pinned commit.
