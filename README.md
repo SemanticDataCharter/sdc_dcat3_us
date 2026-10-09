@@ -45,7 +45,8 @@ What the Dataset carries:
 | `title`, `description` | the model's, plus one sentence saying what a governed data record is and that the schema is the data dictionary |
 | `identifier` | an `Identifier`: `notation` `dm-xy8upneajsb8vdcmnve01g6g`, `schemaAgency` the publisher |
 | `contactPoint` | a `Kind` with `fn` and `hasEmail`, from the declared input |
-| `publisher`, `creator`, `landingPage`, `keyword`, `license`, `language` `en` | from the package |
+| `publisher`, `creator`, `landingPage`, `keyword`, `license`, `language` `en` | from the package; the publisher is the model's `dc:publisher` when the modeler wrote one, else the declared one |
+| `subject`, `contributor`, `spatial`, `relation`, `rights` | from the model's Dublin Core when the modeler wrote them: subject keywords, contributors, coverage as a named `Location`, a relation URL, the rights statement beside the licence URL |
 | `describedBy` | a `Distribution`: the schema's pinned URL as `downloadURL`, `application/xml`, `XSD`, a SHA-256 `Checksum`, `conformsTo` the SDC4 reference model |
 | `conformsTo` | a `Standard` for the same pinned URL |
 | `issued`, `modified` | the model's publication date; `inventoried` the day the catalog was written |
@@ -79,7 +80,10 @@ Left out rather than filled in:
   licensing determinations, the Title 44 statements, the access, use and CUI restrictions, bureau and program codes:
   all of these are an agency's assertions. The writer takes them only as declared input and defaults none of them.
   The sample, published by a company and not an agency, carries `accessRights: public` and no determinations.
-- **No spatial or temporal coverage, no theme, no quality measurements.** The package does not carry them.
+- **No temporal coverage, no theme, no quality measurements.** The package does not carry them. Spatial coverage,
+  subject, contributors, relation and a rights statement come from the model's own Dublin Core when the modeler
+  wrote them; SDCStudio's field defaults ("Universal" for coverage, "None" for relation, blanks) read as unset, which
+  is why the NHANES catalog carries none of them: its modeler left them at the defaults.
 
 Declared rather than read from the package, and said so here: the contact point (`contact@axius-sdc.com` on the
 sample), the catalog's title, description and homepage, the publisher's name and identifier, `accessRights`.

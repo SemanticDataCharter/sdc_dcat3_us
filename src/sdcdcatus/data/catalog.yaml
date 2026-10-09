@@ -2,7 +2,7 @@
 # package cannot know it. Override by editing a copy of this file (--catalog FILE) or with --contact-name and
 # --contact-email. The writer refuses an empty contact e-mail rather than inventing one.
 contact:
-  name: Axius SDC, Inc. data contact
+  name: Axius SDC, Inc. DCAT contact
   email: contact@axius-sdc.com
 catalog:
   title: Semantic Data Charter governed data records

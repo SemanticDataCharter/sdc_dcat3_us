@@ -142,7 +142,7 @@ comprehensive data inventory entry per governed model, with requirement B satisf
 3. **The contact point is declared input, with a configurable default.** DECIDED 9 October (Tim). The schema makes
    `contactPoint` with an e-mail mandatory and the package has none. The address lives in the declared-input file
    beside the contact's name, never in code; the package ships a default file carrying **`contact@axius-sdc.com`**
-   and the name "Axius SDC, Inc. data contact", overridable by editing the file or by `--contact-email` and
+   and the name "Axius SDC, Inc. DCAT contact" (the name names the repository, so incoming mail filters by it; the CDIF repository uses "Axius SDC, Inc. CDIF contact"), overridable by editing the file or by `--contact-email` and
    `--contact-name`. The writer refuses an empty address rather than inventing one. `noreply@` was considered and
    rejected: the field is a vCard address people use to ask questions, and an address that will not read mail says
    the opposite of what the field means. The mailbox exists before the sample is published. When the default has to

@@ -28,7 +28,7 @@
    },
    "contactPoint": {
     "@type": "Kind",
-    "fn": "Axius SDC, Inc. data contact",
+    "fn": "Axius SDC, Inc. DCAT contact",
     "hasEmail": "mailto:contact@axius-sdc.com"
    },
    "publisher": {
