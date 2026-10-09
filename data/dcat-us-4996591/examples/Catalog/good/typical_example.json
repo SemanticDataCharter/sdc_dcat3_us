@@ -1,0 +1,78 @@
+{
+  "@type": "Catalog",
+  "title": "Federal Data Catalog",
+  "description": "A catalog of datasets from federal agencies covering a range of subject areas.",
+  "publisher": {
+    "@type": "Agent",
+    "name": "Federal Data Management Office"
+  },
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "dataset": [
+    {
+      "@type": "Dataset",
+      "title": "Federal Workforce Statistics 2024",
+      "description": "Annual statistics on the federal civilian workforce by agency.",
+      "contactPoint": {
+        "fn": "Workforce Data Support",
+        "hasEmail": "mailto:workforce@example.gov"
+      },
+      "publisher": {
+        "name": "Office of Personnel Management"
+      },
+      "identifier": "https://example.gov/datasets/federal-workforce-statistics-2024"
+    }
+  ],
+  "datasetSeries": [
+    {
+      "@id": "https://example.gov/series/annual-climate-observations",
+      "@type": "DatasetSeries",
+      "title": "Annual Climate Observations",
+      "description": "A series of annual climate observation datasets from monitoring stations.",
+      "publisher": {
+        "name": "National Climate Data Center"
+      },
+      "seriesMember": [
+        {
+          "@type": "Dataset",
+          "title": "Daily Climate Observations 2024",
+          "description": "Daily temperature, precipitation, and wind measurements.",
+          "contactPoint": {
+            "fn": "Climate Data Support",
+            "hasEmail": "mailto:climate@example.gov"
+          },
+          "publisher": {
+            "name": "National Climate Data Center"
+          },
+          "identifier": "https://example.gov/datasets/annual-climate-observations-2024"
+        }
+      ]
+    }
+  ],
+  "homepage": {
+    "@type": "Document",
+    "title": "Federal Data Catalog Homepage",
+    "accessURL": "https://example.gov/data-catalog"
+  },
+  "language": ["en"],
+  "issued": "2020-01-15",
+  "modified": "2024-06-01",
+  "rights": [
+    "This catalog is maintained by the Federal Data Management Office."
+  ],
+  "spatial": [
+    {
+      "@type": "Location",
+      "prefLabel": "United States"
+    }
+  ],
+  "themeTaxonomy": [
+    {
+      "@type": "ConceptScheme",
+      "title": "Federal Data Topics"
+    }
+  ],
+  "conformsTo": {
+    "@type": "Standard",
+    "title": "DCAT-US 3.0"
+  }
+}

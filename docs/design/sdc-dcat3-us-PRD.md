@@ -1,6 +1,6 @@
 # sdc_dcat3_us PRD: one SDC model, described in DCAT-US 3.0
 
-**Status:** v0.1, 9 October 2026, DRAFT for Tim. The second projection demo of the projections track (ContentStrategy
+**Status:** v0.3, 9 October 2026: **implemented; the NHANES Participant catalog passes GSA's validator at the pin and Data.gov's online validator** (section 6). The second projection demo of the projections track (ContentStrategy
 lane 5.6, set 8 October): a public repository in the SemanticDataCharter org, one writer, the target's own validator
 pinned by commit, one passing document from a published model on production, the README as the essay in four parts.
 No issues are filed on the target's repositories (Tim, 9 October). The order of the track changes with this
@@ -139,8 +139,14 @@ comprehensive data inventory entry per governed model, with requirement B satisf
    `tests/`, `build/`, NOTICE, CI, dev to main by pull request with merge commits).
 2. **The package loader and model reader are copied from `sdccdif`**, not shared yet: lane 5.6 says shared code when
    the third repository repeats the second. The third (schema.org) will be the moment to lift them into one package.
-3. **The contact point is declared input.** The schema makes `contactPoint` with an e-mail mandatory and the package
-   has none. **OPEN: which address for the sample.** The writer refuses to run without one rather than inventing it.
+3. **The contact point is declared input, with a configurable default.** DECIDED 9 October (Tim). The schema makes
+   `contactPoint` with an e-mail mandatory and the package has none. The address lives in the declared-input file
+   beside the contact's name, never in code; the package ships a default file carrying **`contact@axius-sdc.com`**
+   and the name "Axius SDC, Inc. data contact", overridable by editing the file or by `--contact-email` and
+   `--contact-name`. The writer refuses an empty address rather than inventing one. `noreply@` was considered and
+   rejected: the field is a vCard address people use to ask questions, and an address that will not read mail says
+   the opposite of what the field means. The mailbox exists before the sample is published. When the default has to
+   change, it is one line in one file and a re-run.
 4. **The schema fills both `describedBy` and `conformsTo`.** Two roles, one URL: the data dictionary the statute asks
    for, and the standard the records conform to.
 5. **No `distribution` on the sample**, stated in part 3, because the FAIR demo's records are not published; the
@@ -156,3 +162,18 @@ script, README and examples to `data/dcat-us-4996591/`), then `src/sdcdcatus/` (
 `sdccdif`; `dcatus.py` emits the Catalog; `cli.py`: `sdcdcatus write --package DIR --catalog catalog.yaml [--out
 data.json]`), then `tests/` (their registry and validator against our output; their corpus against the snapshot),
 then the README. CI on pull requests and main, offline.
+
+## 6. Results, 9 October 2026
+
+- `samples/nhanes-participant/data.json`: a Catalog with one Dataset, written from the package fetched from production
+  (schema SHA-256 `0df45878...3b3b`, the published current version).
+- GSA's method at 4996591 (registry of the 26 definitions, `Draft202012Validator`, format checker): Catalog, Dataset
+  and the `describedBy` Distribution, **0 errors**. Their own corpus on the snapshot: 510 pass, 0 fail.
+- Data.gov's online validator (https://harvest.data.gov/validate/, "dcatus3.0 catalog", pasted): **"No validation
+  errors found."**
+- 7 tests in `tests/`, under a second. CI offline.
+- Decisions 1 to 7 implemented as written; decision 3's default address and name ship in
+  `src/sdcdcatus/data/catalog.yaml`. One addition while building: the format extras (`jsonschema[format]`) are
+  required for the tests, because without them format assertions pass silently; recorded in the README's part 4.
+- Section 3.2 (the seven FAIR Data Demo models as one catalog) is one command away: `sdcdcatus write --ct-id ...`
+  seven times over; not run yet, waiting on Tim's read of the one-model document.
