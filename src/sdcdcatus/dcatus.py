@@ -14,7 +14,7 @@ from importlib import resources
 
 import yaml
 
-from .model import Model
+from sdcreader import Model
 
 SDC4_RM = "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
 PERMANENCE = "https://semanticdatacharter.com/permanence.html"
