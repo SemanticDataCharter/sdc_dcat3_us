@@ -1,0 +1,870 @@
+{
+ "ct_id": "mllwhe842wtnim4ms48qonio",
+ "identifier": "dm-mllwhe842wtnim4ms48qonio",
+ "title": "CMS Outpatient Claim",
+ "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_outpatient) — FAIR Data Demo",
+ "project_name": "FAIR Data Demo",
+ "about": "https://semanticdatacharter.com/dmlib/",
+ "created": "2026-09-26T22:03:42.385193Z",
+ "updated": "2026-09-26T22:03:42.385783Z",
+ "artifacts": {
+  "xsd": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/xsd/",
+  "xml": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/xml/",
+  "json": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/json/",
+  "jsonld": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/jsonld/",
+  "html": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/html/",
+  "sha1": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/sha1/",
+  "zip": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/zip/",
+  "ttl": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/ttl/",
+  "shacl": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/shacl/",
+  "gql": "/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/gql/"
+ },
+ "components": [
+  {
+   "name": "Audit Agent Reference",
+   "type": "XdString",
+   "ct_id": "dkc2ccj5te35z9gd4bu1blcq",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Entity Reference",
+   "type": "XdString",
+   "ct_id": "gcjyjrnp0wsfoelcp4m05c67",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Identifier",
+   "type": "XdString",
+   "ct_id": "fjhgr5fyqxt2crmg2cb5c513",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Data Subject Reference",
+   "type": "XdString",
+   "ct_id": "sndpbhm3xbd6qtbyxmvh3i0e",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "nf1air1zbj8v9w66jozdxmyl",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Identifier",
+   "type": "XdString",
+   "ct_id": "h3kdbvdtyalpvik97saaf0an",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Location Name",
+   "type": "XdString",
+   "ct_id": "ujir739mf1g8ajeczs9nzh9m",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Recorded At",
+   "type": "XdTemporal",
+   "ct_id": "uwiosm2q9ym3ewr4de910s70",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Action",
+   "type": "XdToken",
+   "ct_id": "ce1c8sydkov8bkv4dgdmwe5x",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Outcome",
+   "type": "XdToken",
+   "ct_id": "rpz1czz06jhpahmfz30rblvp",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Confidentiality",
+   "type": "XdToken",
+   "ct_id": "vbctgmdcwps5b3r3l6sboa6y",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Provenance Agent Type",
+   "type": "XdToken",
+   "ct_id": "jujsdur1igws8orw6tvvlqco",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Purpose of Use",
+   "type": "XdToken",
+   "ct_id": "d1evlz8yvdlwt6ia9fjq4pgj",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Attending Physician NPI (AT_PHYSN_NPI)",
+   "type": "XdString",
+   "ct_id": "b5h4gc4jje1imwkzdt6xg5wb",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Beneficiary Code (DESYNPUF_ID)",
+   "type": "XdString",
+   "ct_id": "zshx6rx7ca1j00eda9kxyh6h",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Claim ID (CLM_ID)",
+   "type": "XdString",
+   "ct_id": "skyz3ht3zv3j5qwsx8x0dyru",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Operating Physician NPI (OP_PHYSN_NPI)",
+   "type": "XdString",
+   "ct_id": "lq0eu7o1fizlst28weyv3z2t",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Other Physician NPI (OT_PHYSN_NPI)",
+   "type": "XdString",
+   "ct_id": "d3c64u25m9yvux5qe9eu2ur9",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Provider Institution (PRVDR_NUM)",
+   "type": "XdString",
+   "ct_id": "lv5pcw6w5e15mo1t2oiofatl",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Claim Line Segment (SEGMENT)",
+   "type": "XdCount",
+   "ct_id": "x30sghfdhlvgw2gn7trxp9u6",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Blood Deductible Liability Amount",
+   "type": "XdQuantity",
+   "ct_id": "s7najsv11bd33calnyktjcon",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Claim Payment Amount",
+   "type": "XdQuantity",
+   "ct_id": "bgis0a73v9ncnwhicmjmvhl1",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Part B Coinsurance Amount",
+   "type": "XdQuantity",
+   "ct_id": "d3wdaw6x7seq2wist9v1ebch",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Part B Deductible Amount",
+   "type": "XdQuantity",
+   "ct_id": "tg2j38jv33c2b34s21m1on28",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Primary Payer Claim Paid Amount",
+   "type": "XdQuantity",
+   "ct_id": "rnpfh6mpz8jfq28dfjp17rf9",
+   "parent_cluster": "ls6pcoy94kbq68aa9v5y1qr8"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Diagnosis Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "jpr4t7i8lrhxen4x63s6jp2c",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "f9y0zpvphrny3gapgnjss0w1"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "HCPCS Code",
+   "type": "XdString",
+   "ct_id": "sqy06x5fv64a322dtl308lmw",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Code System: HCPCS",
+   "type": "XdLink",
+   "ct_id": "u3euzufk7txuf1u20g0ca89l",
+   "parent_cluster": "embtq0y4cmyk5em87e3jbdjx"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Procedure Code (ICD-9-CM)",
+   "type": "XdString",
+   "ct_id": "nwmv4c2ogjk8ohxzum1zuprf",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Code System: ICD-9-CM",
+   "type": "XdLink",
+   "ct_id": "qdl35df54hlauu2mhwac6goe",
+   "parent_cluster": "mrjuxhrc2jvbxslo2rlzndyv"
+  },
+  {
+   "name": "Encounter Length",
+   "type": "XdQuantity",
+   "ct_id": "gdcfl9ghwkswdbmxww4senbt",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Encounter End",
+   "type": "XdTemporal",
+   "ct_id": "pkren9mdq1ve6mdcn5hdu4xq",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Encounter Start",
+   "type": "XdTemporal",
+   "ct_id": "anbcg4rhacgmv8lkfofymmv0",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Encounter Class",
+   "type": "XdToken",
+   "ct_id": "f8vsfzqb1m8ecfosdzhc9out",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Encounter Priority",
+   "type": "XdToken",
+   "ct_id": "jcsoakfsmdndfvw6p0nh879m",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Encounter Status",
+   "type": "XdToken",
+   "ct_id": "mpkqsp6zn1gbc1zhqai9y40b",
+   "parent_cluster": "rghkif2x2xhe0e82mc85qwvm"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "u6u23oip0dinxve95ub0kwma"
+  },
+  {
+   "name": "Encounter Reason Code (SNOMED CT)",
+   "type": "XdString",
+   "ct_id": "cmtzyf0esp2hbf8ze2q0d3bh",
+   "parent_cluster": "u6u23oip0dinxve95ub0kwma"
+  },
+  {
+   "name": "Code System: SNOMED CT",
+   "type": "XdLink",
+   "ct_id": "q75pzzv36or6dxgjrrbvmun5",
+   "parent_cluster": "u6u23oip0dinxve95ub0kwma"
+  },
+  {
+   "name": "Admit Source",
+   "type": "XdToken",
+   "ct_id": "awvbv44gmq5co6prxcnhdz09",
+   "parent_cluster": "fnxiiamw1uk1hvsxmjgsu1xy"
+  },
+  {
+   "name": "Discharge Disposition",
+   "type": "XdToken",
+   "ct_id": "wd1txyosw8ha21sohphne92e",
+   "parent_cluster": "fnxiiamw1uk1hvsxmjgsu1xy"
+  },
+  {
+   "name": "Activity Description",
+   "type": "XdString",
+   "ct_id": "hhusuzzig19rs46ngz23k5g7",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Identifier",
+   "type": "XdString",
+   "ct_id": "wr06h54xqqw2q9id8i9673jy",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Label",
+   "type": "XdString",
+   "ct_id": "r6hkunjm2q0hlxiknlc9ljix",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Location",
+   "type": "XdString",
+   "ct_id": "uzai5uey5p1fnn9ezj9u6vor",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Type",
+   "type": "XdString",
+   "ct_id": "jjzmhdxvbt97pq81iwqubtxk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Error Message",
+   "type": "XdString",
+   "ct_id": "xlgjqdpwdbn2re3mdh5yy2rk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Had Plan Reference",
+   "type": "XdString",
+   "ct_id": "vhezo2cckpe92x4c3j2memeh",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Used Entity Reference",
+   "type": "XdString",
+   "ct_id": "t0whhrqtnb54te4mk48i1ooj",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Associated With Reference",
+   "type": "XdString",
+   "ct_id": "r48alj7hc3797qfjnf2uj71n",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Ended By Reference",
+   "type": "XdString",
+   "ct_id": "ueb5g1ojzlwwt0mnds5zb6wl",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Informed By Reference",
+   "type": "XdString",
+   "ct_id": "qh84jdzp1kxt85aq4ilo0svk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Started By Reference",
+   "type": "XdString",
+   "ct_id": "ginfqbk7q59ld2r4us8sjnv1",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Ended At",
+   "type": "XdTemporal",
+   "ct_id": "a5scyosu6j84vz350mqyrzl2",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Started At",
+   "type": "XdTemporal",
+   "ct_id": "sa4nl1kbpdr842fkucvfjkpq",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Status",
+   "type": "XdToken",
+   "ct_id": "wl6j4ekcmu4hvt2m12zw4zp8",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Acted On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "og08xf6bu928uuz6t3y0e23f",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Description",
+   "type": "XdString",
+   "ct_id": "gb78cmuyo72hqs5apymdki7l",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Email",
+   "type": "XdString",
+   "ct_id": "qb90a0sp9vvb6c5cbcf236ys",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Identifier",
+   "type": "XdString",
+   "ct_id": "w2ruemcfy35rw60jl1t9dew2",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Name",
+   "type": "XdString",
+   "ct_id": "xxe21o9ojzmy9wxxky1tnmog",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Organization Name",
+   "type": "XdString",
+   "ct_id": "eftvwi5byq6cdtd931qyxzw0",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Name",
+   "type": "XdString",
+   "ct_id": "aa663ivutjf2fs4757t0bbzy",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Version",
+   "type": "XdString",
+   "ct_id": "x0lebwtobgaelj5pev3258sd",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "PROV Agent Type",
+   "type": "XdToken",
+   "ct_id": "i16vqj89it3db7d3c5qjko9p",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  }
+ ]
+}

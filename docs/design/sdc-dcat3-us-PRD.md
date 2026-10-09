@@ -175,5 +175,11 @@ then the README. CI on pull requests and main, offline.
 - Decisions 1 to 7 implemented as written; decision 3's default address and name ship in
   `src/sdcdcatus/data/catalog.yaml`. One addition while building: the format extras (`jsonschema[format]`) are
   required for the tests, because without them format assertions pass silently; recorded in the README's part 4.
-- Section 3.2 (the seven FAIR Data Demo models as one catalog) is one command away: `sdcdcatus write --ct-id ...`
-  seven times over; not run yet, waiting on Tim's read of the one-model document.
+- **Section 3.2 done, 9 October (Tim: "run the seven FAIR demo models as one data.json"):**
+  `samples/fair-data-demo/data.json`, seven Datasets from the packages fetched from production and saved beside it;
+  GSA's schema at the pin, 0 errors; Data.gov's online validator, "No validation errors found"; a test re-runs the
+  writer over the saved packages and asserts the committed file equal. Found on the way: the catalog's artifact
+  endpoint answers with a storage pointer (`download_url`) for the JSON-LD, which `fetch_package` now follows (fixed
+  in `sdc_cdif` too).
+- 10 October note for the record: the writers read the model's Dublin Core from the schema header (Tim, 9 October),
+  with SDCStudio's defaults as unset; SDCStudio issues #748 and #749 filed for the package's metadata gaps.

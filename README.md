@@ -25,6 +25,12 @@ sdcdcatus write --ct-id xy8upneajsb8vdcmnve01g6g --ct-id <another> --save-packag
 sdcdcatus write --package DIR --catalog my-catalog.yaml --contact-email data@agency.gov --out data.json  # a publisher's own declared input
 ```
 
+**A catalog of seven.** `samples/fair-data-demo/data.json` is the same writer run over the seven FAIR Data Demo models
+fetched from the public catalog (NHANES Participant and Medication, BRFSS Respondent, CMS Beneficiary, Inpatient
+Claim, Outpatient Claim and Prescription Drug Event), each package saved beside it: one `data.json`, one Dataset per
+governed model, each with its schema as the data dictionary. That is what a comprehensive data inventory entry per
+model looks like.
+
 **Two kinds of input, kept apart.** From the model's package (its JSON-LD, its schema, the public catalog record and
 the published schema versions; no account needed; a model without a package is refused): title, description,
 identifier, publisher, dates, language, licence, the schema's URL and SHA-256, the variable count. From the catalog's
@@ -68,7 +74,9 @@ validates the sample Catalog, its Dataset and the `describedBy` Distribution wit
 registry of every definition by `$id` and `Draft202012Validator` with the format checker: 0 errors.
 
 Second witness, Data.gov's online validator at https://harvest.data.gov/validate/ (schema "dcatus3.0 catalog", paste
-or upload the sample): **"No validation errors found"**, 9 October 2026.
+or upload the sample): **"No validation errors found"** for the one-model catalog and for the seven-model catalog,
+9 October 2026. The seven-model catalog is also checked in the tests, and the committed file is asserted equal to a
+fresh run over the saved packages.
 
 ## 3. What the projection could not say
 
