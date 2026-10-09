@@ -69,17 +69,18 @@ def _dataset(model: Model, declared: dict, today: date) -> dict:
     pkg = model.package
     publisher = declared.get("publisher") or {}
     contact = declared["contact"]
-    date_modified = (model.metadata.get("dc:date") or "")[:10] or today.isoformat()
-    license_url = _license(model.metadata.get("dc:rights") or "")
+    date_modified = (model.dc("date") or "")[:10] or today.isoformat()
+    license_url = model.rights_url
+    model_publisher = model.dc("publisher")
     schema_title = f"SDC4 schema dm-{model.ct_id} ({model.title})"
     ds = {
         "@id": pkg.catalog_url,
         "@type": "Dataset",
         "title": f"{model.title} governed data records",
         "description": _description(model, date_modified),
-        "identifier": {"@type": "Identifier", "notation": f"dm-{model.ct_id}", "schemaAgency": publisher.get("name") or "Semantic Data Charter"},
+        "identifier": {"@type": "Identifier", "notation": f"dm-{model.ct_id}", "schemaAgency": model_publisher or publisher.get("name") or "Semantic Data Charter"},
         "contactPoint": {"@type": "Kind", "fn": contact["name"], "hasEmail": f"mailto:{contact['email']}"},
-        "publisher": _organization(publisher),
+        "publisher": {"@type": "Organization", "name": model_publisher} if model_publisher else _organization(publisher),
         "keyword": _keywords(model),
         "landingPage": {"@type": "Document", "title": f"{model.title} in the public catalog", "accessURL": pkg.catalog_url},
         "describedBy": {
@@ -106,11 +107,25 @@ def _dataset(model: Model, declared: dict, today: date) -> dict:
     if license_url:
         ds["license"] = license_url
         ds["describedBy"]["license"] = license_url
-    creator = model.metadata.get("dc:creator")
+    creator = model.dc("creator")
     if creator:
         ds["creator"] = {"@type": "Agent", "name": creator}
-    if declared.get("rights"):
-        ds["rights"] = list(declared["rights"])
+    # the rest of the model's Dublin Core, when the modeler wrote it (SDCStudio's defaults read as unset)
+    if model.contributors:
+        ds["contributor"] = [{"@type": "Agent", "name": c} for c in model.contributors]
+    if model.subjects:
+        ds["subject"] = list(model.subjects)
+    coverage = model.dc("coverage")
+    if coverage:
+        ds["spatial"] = [{"@type": "Location", "prefLabel": coverage}]
+    relation = model.dc("relation")
+    if relation and re.match(r"^https?://\S+$", relation):
+        ds["relation"] = [relation]
+    rights = list(declared.get("rights") or [])
+    if model.rights_statement:
+        rights.insert(0, model.rights_statement)
+    if rights:
+        ds["rights"] = rights
     if declared.get("theme"):
         ds["theme"] = list(declared["theme"])
     if declared.get("distribution"):
@@ -126,7 +141,7 @@ def _description(model: Model, date_modified: str) -> str:
 
 
 def _keywords(model: Model) -> list[str]:
-    words = ["Semantic Data Charter", "SDC4", "governed data record"]
+    words = model.subjects + ["Semantic Data Charter", "SDC4", "governed data record"]
     project = model.package.catalog.get("project_name")
     if project:
         words.insert(0, project)
@@ -146,7 +161,3 @@ def _organization(p: dict) -> dict:
         o["@id"] = p["id"]
     return o
 
-
-def _license(rights: str) -> str:
-    m = re.search(r"https?://\S+", rights)
-    return m.group(0).rstrip(".,;") if m else ""

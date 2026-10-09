@@ -98,6 +98,29 @@ def test_nothing_is_defaulted_for_an_agency(catalog):
     assert "bureauCode" not in ds and "programCode" not in ds
 
 
+def test_the_models_dublin_core_is_read_from_the_schema_header_with_defaults_as_unset(model, catalog, registry):
+    assert model.header["coverage"] == "Universal" and model.dc("coverage") is None and model.dc("publisher") is None
+    ds = catalog["dataset"][0]
+    assert "spatial" not in ds and "subject" not in ds and "contributor" not in ds and ds["publisher"]["name"] == "Axius SDC, Inc."
+    import copy
+    authored = copy.copy(model)
+    authored.header = dict(model.header, publisher="National Center for Health Statistics", subject="blood pressure; demographics; NHANES",
+                           coverage="United States, civilian noninstitutionalized population", contributor=["A. Modeler"],
+                           relation="https://wwwn.cdc.gov/nchs/nhanes/",
+                           rights="Public domain in the United States https://creativecommons.org/publicdomain/zero/1.0/ except where noted")
+    c2 = write_catalog([authored], load_declared(), today=DAY)
+    ds2 = c2["dataset"][0]
+    assert ds2["publisher"] == {"@type": "Organization", "name": "National Center for Health Statistics"}
+    assert ds2["identifier"]["schemaAgency"] == "National Center for Health Statistics"
+    assert ds2["subject"] == ["blood pressure", "demographics", "NHANES"] and ds2["keyword"][1:4] == ["blood pressure", "demographics", "NHANES"]
+    assert ds2["contributor"] == [{"@type": "Agent", "name": "A. Modeler"}]
+    assert ds2["spatial"] == [{"@type": "Location", "prefLabel": "United States, civilian noninstitutionalized population"}]
+    assert ds2["relation"] == ["https://wwwn.cdc.gov/nchs/nhanes/"]
+    assert ds2["license"] == "https://creativecommons.org/publicdomain/zero/1.0/" and "except where noted" in ds2["rights"][0]
+    errors = [f"{'/'.join(map(str, e.absolute_path))}: {e.message[:160]}" for e in validator(registry, "catalog").iter_errors(c2)]
+    assert not errors, errors[:8]
+
+
 def test_the_writer_refuses_a_model_without_its_package(tmp_path):
     from sdcdcatus.package import PackageError
     (tmp_path / "dm-abc.xsd").write_bytes(b"<xsd:schema/>")
