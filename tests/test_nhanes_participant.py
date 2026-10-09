@@ -78,7 +78,7 @@ def test_the_schema_is_the_data_dictionary_and_the_standard_by_url_and_sha256(ca
 
 def test_the_contact_point_is_declared_input_with_the_default_address(catalog):
     ds = catalog["dataset"][0]
-    assert ds["contactPoint"] == {"@type": "Kind", "fn": "Axius SDC, Inc. data contact", "hasEmail": "mailto:contact@axius-sdc.com"}
+    assert ds["contactPoint"] == {"@type": "Kind", "fn": "Axius SDC, Inc. DCAT contact", "hasEmail": "mailto:contact@axius-sdc.com"}
     overridden = load_declared(None, "Agency Data Officer", "data@agency.gov")
     assert overridden["contact"] == {"name": "Agency Data Officer", "email": "data@agency.gov"}
     with pytest.raises(DeclaredInputError, match="contact e-mail"):
