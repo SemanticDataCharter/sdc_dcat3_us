@@ -1,0 +1,98 @@
+{
+ "@type": "Catalog",
+ "conformsTo": {
+  "@type": "Standard",
+  "title": "DCAT-US 3.0",
+  "identifier": "https://resources.data.gov/dcat-us/3.0.0/definitions/catalog"
+ },
+ "title": "Semantic Data Charter governed data records",
+ "description": "Collections of Governed Data Records, one per published Semantic Data Charter model, each described by the immutable schema its records conform to.",
+ "publisher": {
+  "@type": "Agent",
+  "name": "Axius SDC, Inc.",
+  "@id": "https://axius-sdc.com"
+ },
+ "issued": "2026-09-26",
+ "modified": "2026-09-26",
+ "language": "en",
+ "dataset": [
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/",
+   "@type": "Dataset",
+   "title": "NHANES Participant governed data records",
+   "description": "SDC4 data model for National Health and Nutrition Examination Survey (nhanes_blood_pressure) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model NHANES Participant (dm-xy8upneajsb8vdcmnve01g6g), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-xy8upneajsb8vdcmnve01g6g",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. data contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "NHANES Participant in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)",
+    "description": "The immutable schema every NHANES Participant record is validated against: 153 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  }
+ ],
+ "homepage": {
+  "@type": "Document",
+  "title": "Semantic Data Charter governed data records",
+  "accessURL": "https://semanticdatacharter.com"
+ }
+}

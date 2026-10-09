@@ -1,0 +1,11 @@
+sdcdcatus
+Copyright 2026 Axius SDC, Inc.
+
+Licensed under the Apache License, Version 2.0.
+
+This package's output follows DCAT-US Schema v3.0, the United States federal data catalog metadata standard
+(https://resources.data.gov/resources/dcat-us3/), maintained by the Data.gov program at GSA and governed by the Federal
+CDO Council's Tiger Team, an application profile of the W3C Data Catalog Vocabulary version 3. The JSON Schema
+definitions, examples and validation script in data/ are copied from https://github.com/GSA/dcat-us at a pinned
+commit; they are a work of the United States Government (17 USC § 105) released under CC0 1.0, and keep that status
+here. The sdccdif package loader and model reader are reused from https://github.com/SemanticDataCharter/sdc_cdif.

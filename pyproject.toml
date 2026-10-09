@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdcdcatus"
+version = "0.1.0"
+description = "Describe published Semantic Data Charter models' governed data records in a DCAT-US 3.0 catalog (data.json)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Axius SDC, Inc." }]
+keywords = ["dcat-us", "dcat", "data.json", "data.gov", "sdc", "fair"]
+
+dependencies = [
+    "lxml>=5.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+fetch = ["requests>=2.31"]
+# The tests run GSA's own validator from the pinned snapshot in data/; it needs jsonschema with format checking.
+dev = ["pytest>=8.0", "requests>=2.31", "jsonschema[format]>=4.18"]
+
+[project.scripts]
+sdcdcatus = "sdcdcatus.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/SemanticDataCharter/sdc_dcat3_us"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sdcdcatus = ["data/*.yaml"]
