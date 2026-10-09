@@ -1,0 +1,762 @@
+{
+ "ct_id": "iymux9kjv8ndbkoi36xzx17i",
+ "identifier": "dm-iymux9kjv8ndbkoi36xzx17i",
+ "title": "BRFSS Respondent",
+ "description": "SDC4 data model for Behavioral Risk Factor Surveillance System (brfss) — FAIR Data Demo",
+ "project_name": "FAIR Data Demo",
+ "about": "https://semanticdatacharter.com/dmlib/",
+ "created": "2026-09-26T22:03:39.773853Z",
+ "updated": "2026-09-26T22:03:39.774514Z",
+ "artifacts": {
+  "xsd": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/xsd/",
+  "xml": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/xml/",
+  "json": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/json/",
+  "jsonld": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/jsonld/",
+  "html": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/html/",
+  "sha1": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/sha1/",
+  "zip": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/zip/",
+  "ttl": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/ttl/",
+  "shacl": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/shacl/",
+  "gql": "/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/gql/"
+ },
+ "components": [
+  {
+   "name": "Audit Agent Reference",
+   "type": "XdString",
+   "ct_id": "dkc2ccj5te35z9gd4bu1blcq",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Entity Reference",
+   "type": "XdString",
+   "ct_id": "gcjyjrnp0wsfoelcp4m05c67",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Identifier",
+   "type": "XdString",
+   "ct_id": "fjhgr5fyqxt2crmg2cb5c513",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Data Subject Reference",
+   "type": "XdString",
+   "ct_id": "sndpbhm3xbd6qtbyxmvh3i0e",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "nf1air1zbj8v9w66jozdxmyl",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Identifier",
+   "type": "XdString",
+   "ct_id": "h3kdbvdtyalpvik97saaf0an",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Location Name",
+   "type": "XdString",
+   "ct_id": "ujir739mf1g8ajeczs9nzh9m",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Recorded At",
+   "type": "XdTemporal",
+   "ct_id": "uwiosm2q9ym3ewr4de910s70",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Action",
+   "type": "XdToken",
+   "ct_id": "ce1c8sydkov8bkv4dgdmwe5x",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Outcome",
+   "type": "XdToken",
+   "ct_id": "rpz1czz06jhpahmfz30rblvp",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Confidentiality",
+   "type": "XdToken",
+   "ct_id": "vbctgmdcwps5b3r3l6sboa6y",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Provenance Agent Type",
+   "type": "XdToken",
+   "ct_id": "jujsdur1igws8orw6tvvlqco",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Purpose of Use",
+   "type": "XdToken",
+   "ct_id": "d1evlz8yvdlwt6ia9fjq4pgj",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Annual Sequence Number (SEQNO)",
+   "type": "XdString",
+   "ct_id": "pflduyrah1tnmmsjrwfvi121",
+   "parent_cluster": "rdoj4o216s33ymezyefwb8ia"
+  },
+  {
+   "name": "Reported Height in Feet and Inches (HEIGHT3)",
+   "type": "XdString",
+   "ct_id": "urjk1vvcot1s319mxygpdsf5",
+   "parent_cluster": "gc3nb6hzobkzifswmzgt7w6t"
+  },
+  {
+   "name": "Reported Weight in Pounds (WEIGHT2)",
+   "type": "XdQuantity",
+   "ct_id": "gket571isxo2uckturhvxadk",
+   "parent_cluster": "gc3nb6hzobkzifswmzgt7w6t"
+  },
+  {
+   "name": "Computed Body Mass Index Category (_BMI5CAT)",
+   "type": "XdToken",
+   "ct_id": "ezewpvppvx8zjikutr53ppgz",
+   "parent_cluster": "gc3nb6hzobkzifswmzgt7w6t"
+  },
+  {
+   "name": "Body Height",
+   "type": "XdQuantity",
+   "ct_id": "z1ezf3vzksp7qpgd9l3uxvqo",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Body Mass Index",
+   "type": "XdQuantity",
+   "ct_id": "dchiej5tv7tyhfwr6h3ync1i",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Body Temperature",
+   "type": "XdQuantity",
+   "ct_id": "ppqdmkbjmd3gn0p2i74ue3ox",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Body Weight",
+   "type": "XdQuantity",
+   "ct_id": "doxdajuj6j1mk480zd1k7ssz",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Heart Rate",
+   "type": "XdQuantity",
+   "ct_id": "oy0jwif5pi86xtimzxzhapvu",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Oxygen Saturation",
+   "type": "XdQuantity",
+   "ct_id": "htr0gulg01caowd76j6v4ukh",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Respiratory Rate",
+   "type": "XdQuantity",
+   "ct_id": "nzq70mbegncgc6hdfp7vtu46",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Observation Date Time",
+   "type": "XdTemporal",
+   "ct_id": "dkyyj01tksb7h7akq2w7moum",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Observation Status",
+   "type": "XdToken",
+   "ct_id": "q9vmn1cvdclgr757aer5v1rg",
+   "parent_cluster": "atvd5lzut4pjzc7dpv1ykb92"
+  },
+  {
+   "name": "Diastolic Blood Pressure",
+   "type": "XdQuantity",
+   "ct_id": "s3qzwxxz9b42lcd2wryok8jd",
+   "parent_cluster": "wyk9e1d74y5xrgv97o9y75ib"
+  },
+  {
+   "name": "Systolic Blood Pressure",
+   "type": "XdQuantity",
+   "ct_id": "r1ve12xphsb5hu2yjmhksw5h",
+   "parent_cluster": "wyk9e1d74y5xrgv97o9y75ib"
+  },
+  {
+   "name": "Observation Date Time",
+   "type": "XdTemporal",
+   "ct_id": "dkyyj01tksb7h7akq2w7moum",
+   "parent_cluster": "wyk9e1d74y5xrgv97o9y75ib"
+  },
+  {
+   "name": "Observation Status",
+   "type": "XdToken",
+   "ct_id": "q9vmn1cvdclgr757aer5v1rg",
+   "parent_cluster": "wyk9e1d74y5xrgv97o9y75ib"
+  },
+  {
+   "name": "Body Site Code (SNOMED CT)",
+   "type": "XdString",
+   "ct_id": "vi7yvq0b8nler3g6alaamrzm",
+   "parent_cluster": "r5koa840csi3zcewts0uo0r5"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "r5koa840csi3zcewts0uo0r5"
+  },
+  {
+   "name": "Code System: SNOMED CT",
+   "type": "XdLink",
+   "ct_id": "q75pzzv36or6dxgjrrbvmun5",
+   "parent_cluster": "r5koa840csi3zcewts0uo0r5"
+  },
+  {
+   "name": "Still Have Asthma (ASTHNOW)",
+   "type": "XdToken",
+   "ct_id": "dkmozm7gxxss45gf5yhthpjg",
+   "parent_cluster": "lahhb7fhnu75l1fxrv9f8fdv"
+  },
+  {
+   "name": "Condition: Alzheimer's Disease or Related Disorder",
+   "type": "XdToken",
+   "ct_id": "d9z9mcx6gs9zbz4k6f0v738s",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Angina",
+   "type": "XdToken",
+   "ct_id": "o4d67oubyyunugx3la44f53u",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Arthritis",
+   "type": "XdToken",
+   "ct_id": "nd1v8jk7wtm1tthzw1f4987t",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Asthma",
+   "type": "XdToken",
+   "ct_id": "acr1xvqppf1b3rjsrst6tt4p",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Cancer",
+   "type": "XdToken",
+   "ct_id": "ix0my2v2z79s002g0r8orosf",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Chronic Bronchitis",
+   "type": "XdToken",
+   "ct_id": "jyx7rxfktazhgxgq84fxf6wr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Congestive Heart Failure",
+   "type": "XdToken",
+   "ct_id": "hyqlz591lhj54sdt1a1mup70",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: COPD",
+   "type": "XdToken",
+   "ct_id": "mijr18ynaqde2l8jps70l2g6",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Coronary Heart Disease",
+   "type": "XdToken",
+   "ct_id": "udbydjqj76l8kl6mi2s3v7vd",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Depression",
+   "type": "XdToken",
+   "ct_id": "of4crvmnrr3s5q5396kmt0jv",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Diabetes",
+   "type": "XdToken",
+   "ct_id": "fzpb9xr5jg2m3e3dzmvi1v3h",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Emphysema",
+   "type": "XdToken",
+   "ct_id": "sbulkq80j4fkbiql4zgje4qr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Heart Attack",
+   "type": "XdToken",
+   "ct_id": "yshoeps2dm0j1ueusqs825v6",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: High Blood Pressure",
+   "type": "XdToken",
+   "ct_id": "lvockfc8lce5p15wuwxc1kwa",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: High Cholesterol",
+   "type": "XdToken",
+   "ct_id": "gp3jxw3xzs761ll6u5rvc6jr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition Indicator Basis",
+   "type": "XdToken",
+   "ct_id": "hc79skkfionpgw87dsg5yrgw",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Kidney Disease",
+   "type": "XdToken",
+   "ct_id": "sw5rt0k2uap0e3xgl4rznfgu",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Liver Condition",
+   "type": "XdToken",
+   "ct_id": "atqkooccakulfhkt18c008fx",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Osteoporosis",
+   "type": "XdToken",
+   "ct_id": "l784ggegqcvrpnmw2yvo4il7",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Skin Cancer",
+   "type": "XdToken",
+   "ct_id": "xsohkckyof7y1xj8h1ab4pxu",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Stroke",
+   "type": "XdToken",
+   "ct_id": "zc6p008h5naqev8zngtzvyx9",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Thyroid Problem",
+   "type": "XdToken",
+   "ct_id": "p8u71b4lhct4ra0szgkex7xo",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Imputed Age Value Collapsed Above 80 (_AGE80)",
+   "type": "XdCount",
+   "ct_id": "evijzyx8i3a268zqdsgmhzo0",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Number of Children in Household (CHILDREN)",
+   "type": "XdCount",
+   "ct_id": "abjbfcel6qppumg0rlf78wcp",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Age",
+   "type": "XdCount",
+   "ct_id": "wuvdeiwoe5bna7nlhcl1c4h9",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Education Level (EDUCA)",
+   "type": "XdToken",
+   "ct_id": "fci5gajaodxc2ihq6nuz9l6y",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Employment Status (EMPLOY1)",
+   "type": "XdToken",
+   "ct_id": "j67yf27qljb83m2fwvown1lk",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Imputed Race/Ethnicity Value (_IMPRACE)",
+   "type": "XdToken",
+   "ct_id": "qamg60snb8cl9auv4y03kdc4",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Income Level (INCOME3)",
+   "type": "XdToken",
+   "ct_id": "crdh278iwq7azbtcgsuxteve",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Marital Status (MARITAL)",
+   "type": "XdToken",
+   "ct_id": "czh5vzmdeijkwrtyla1w7su8",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Pregnancy Status (PREGNANT)",
+   "type": "XdToken",
+   "ct_id": "gighl3atjkq88ttivdezt4p7",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Primary Source of Health Insurance (PRIMINSR)",
+   "type": "XdToken",
+   "ct_id": "evbpc370eyfc3q3lldwifu78",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Sex of Respondent (SEXVAR)",
+   "type": "XdToken",
+   "ct_id": "et536sfok7glz7fartfs4m65",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Veteran Status",
+   "type": "XdToken",
+   "ct_id": "eimlsgbawhm8aa4i6gbdrja0",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Are you pregnant now?",
+   "type": "XdToken",
+   "ct_id": "owjt9bcgisxfbco8qnddo2fq",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Category of Health Insurance",
+   "type": "XdToken",
+   "ct_id": "luq973ggnjoo9ixkt0dym8v6",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Current Educational Attainment",
+   "type": "XdToken",
+   "ct_id": "xtbtk7ro6s9247bcwt4ak4h1",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Employment Status",
+   "type": "XdToken",
+   "ct_id": "oy35qocyvn0zxq8ni4azvz39",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Marital Status",
+   "type": "XdToken",
+   "ct_id": "qsetd453kk9own8co1wmc5cz",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Race/Ethnicity Self-Identification",
+   "type": "XdToken",
+   "ct_id": "u5tietya3u56hbz2kos06ai7",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Administrative Gender",
+   "type": "XdToken",
+   "ct_id": "gxzbm758mhdz51xd4bawlfhh",
+   "parent_cluster": "oqw3pnwhf8knpgsfo8k3xojn"
+  },
+  {
+   "name": "Blind or Serious Difficulty Seeing (BLIND)",
+   "type": "XdToken",
+   "ct_id": "rw8s64t4v80421biq8eo9p2x",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Deaf or Serious Difficulty Hearing (DEAF)",
+   "type": "XdToken",
+   "ct_id": "hs066djavlc5r494vqu61thl",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Difficulty Doing Errands Alone (DIFFALON)",
+   "type": "XdToken",
+   "ct_id": "l9s5avvkix0og66m0lewwqgg",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Difficulty Dressing or Bathing (DIFFDRES)",
+   "type": "XdToken",
+   "ct_id": "zbwodv9m60b33blptlellmu0",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Serious Difficulty Concentrating, Remembering or Deciding (DECIDE)",
+   "type": "XdToken",
+   "ct_id": "e104gkr3e96ekydrpe8qogjw",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Serious Difficulty Walking or Climbing Stairs (DIFFWALK)",
+   "type": "XdToken",
+   "ct_id": "m3970or5qg49k78l0lq1ptjc",
+   "parent_cluster": "u19jrjjc6aznug6hs2twjiy5"
+  },
+  {
+   "name": "Days Mental Health Not Good, Past 30 (MENTHLTH)",
+   "type": "XdCount",
+   "ct_id": "k32effn0kp5a42ikkpvcva9j",
+   "parent_cluster": "kmgw3rv02bipvaoxpvnh7fzk"
+  },
+  {
+   "name": "Days Physical Health Not Good, Past 30 (PHYSHLTH)",
+   "type": "XdCount",
+   "ct_id": "fljkn7b19qtnj6rr3t8qcfg1",
+   "parent_cluster": "kmgw3rv02bipvaoxpvnh7fzk"
+  },
+  {
+   "name": "Exercise in Past 30 Days (EXERANY2)",
+   "type": "XdToken",
+   "ct_id": "a08lkh4xjvqqjtz7sxy129pa",
+   "parent_cluster": "kmgw3rv02bipvaoxpvnh7fzk"
+  },
+  {
+   "name": "General Health Status",
+   "type": "XdToken",
+   "ct_id": "lth27h6towue4i9iq1cudogc",
+   "parent_cluster": "kmgw3rv02bipvaoxpvnh7fzk"
+  },
+  {
+   "name": "Length of Time Since Last Routine Checkup (CHECKUP1)",
+   "type": "XdToken",
+   "ct_id": "fa0aian3co6if5igu488whhr",
+   "parent_cluster": "kmgw3rv02bipvaoxpvnh7fzk"
+  },
+  {
+   "name": "Primary Sampling Unit (_PSU)",
+   "type": "XdString",
+   "ct_id": "c23wij2i4jkwu016ekro40bv",
+   "parent_cluster": "zauadmfc05ep5nf2kd9j8cwh"
+  },
+  {
+   "name": "Sample Design Stratification Variable (_STSTR)",
+   "type": "XdString",
+   "ct_id": "frb0byilu8prpn7veyj6luwl",
+   "parent_cluster": "zauadmfc05ep5nf2kd9j8cwh"
+  },
+  {
+   "name": "State FIPS Code (_STATE)",
+   "type": "XdString",
+   "ct_id": "wesa1iwagjckq500ixmosu2l",
+   "parent_cluster": "zauadmfc05ep5nf2kd9j8cwh"
+  },
+  {
+   "name": "Final Weight: Land-line and Cell-phone Data (_LLCPWT)",
+   "type": "XdQuantity",
+   "ct_id": "ba0vveg1d3bmjb9nx8e2x4d3",
+   "parent_cluster": "zauadmfc05ep5nf2kd9j8cwh"
+  },
+  {
+   "name": "Interview Date (IDATE)",
+   "type": "XdTemporal",
+   "ct_id": "l4jr7yi9926sctme3vjuti72",
+   "parent_cluster": "zauadmfc05ep5nf2kd9j8cwh"
+  },
+  {
+   "name": "Average Alcoholic Drinks per Day in Past 30 (AVEDRNK3)",
+   "type": "XdCount",
+   "ct_id": "gr95a9bk6mfr0220fmxc3o4e",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Binge Drinking Occasions in Past 30 (DRNK3GE5)",
+   "type": "XdCount",
+   "ct_id": "g0dq4n7oml1mmi21t50biiwt",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Days in Past 30 Had Alcoholic Beverage (ALCDAY4)",
+   "type": "XdCount",
+   "ct_id": "nh9s5b7gb713asjatbg5guyc",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Computed Smoking Status (_SMOKER3)",
+   "type": "XdToken",
+   "ct_id": "iwlb0rcomw3q8rlff3ajukme",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Current E-cigarette Use (ECIGNOW2)",
+   "type": "XdToken",
+   "ct_id": "ecwiva31y2fky3eu1mdnvurt",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Frequency of Days Now Smoking (SMOKDAY2)",
+   "type": "XdToken",
+   "ct_id": "kzni1q04rghj23ca0zbhauu5",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Smoked at Least 100 Cigarettes (SMOKE100)",
+   "type": "XdToken",
+   "ct_id": "hukufq8g2u2k0cpcal7uxsa8",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Smoking Status",
+   "type": "XdToken",
+   "ct_id": "n7pn5ctqo81v0v418hez5zv5",
+   "parent_cluster": "dh2ghpj9z1brefxf0pb4yi14"
+  },
+  {
+   "name": "Activity Description",
+   "type": "XdString",
+   "ct_id": "hhusuzzig19rs46ngz23k5g7",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Identifier",
+   "type": "XdString",
+   "ct_id": "wr06h54xqqw2q9id8i9673jy",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Label",
+   "type": "XdString",
+   "ct_id": "r6hkunjm2q0hlxiknlc9ljix",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Location",
+   "type": "XdString",
+   "ct_id": "uzai5uey5p1fnn9ezj9u6vor",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Type",
+   "type": "XdString",
+   "ct_id": "jjzmhdxvbt97pq81iwqubtxk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Error Message",
+   "type": "XdString",
+   "ct_id": "xlgjqdpwdbn2re3mdh5yy2rk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Had Plan Reference",
+   "type": "XdString",
+   "ct_id": "vhezo2cckpe92x4c3j2memeh",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Used Entity Reference",
+   "type": "XdString",
+   "ct_id": "t0whhrqtnb54te4mk48i1ooj",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Associated With Reference",
+   "type": "XdString",
+   "ct_id": "r48alj7hc3797qfjnf2uj71n",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Ended By Reference",
+   "type": "XdString",
+   "ct_id": "ueb5g1ojzlwwt0mnds5zb6wl",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Informed By Reference",
+   "type": "XdString",
+   "ct_id": "qh84jdzp1kxt85aq4ilo0svk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Started By Reference",
+   "type": "XdString",
+   "ct_id": "ginfqbk7q59ld2r4us8sjnv1",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Ended At",
+   "type": "XdTemporal",
+   "ct_id": "a5scyosu6j84vz350mqyrzl2",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Started At",
+   "type": "XdTemporal",
+   "ct_id": "sa4nl1kbpdr842fkucvfjkpq",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Status",
+   "type": "XdToken",
+   "ct_id": "wl6j4ekcmu4hvt2m12zw4zp8",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Acted On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "og08xf6bu928uuz6t3y0e23f",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Description",
+   "type": "XdString",
+   "ct_id": "gb78cmuyo72hqs5apymdki7l",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Email",
+   "type": "XdString",
+   "ct_id": "qb90a0sp9vvb6c5cbcf236ys",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Identifier",
+   "type": "XdString",
+   "ct_id": "w2ruemcfy35rw60jl1t9dew2",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Name",
+   "type": "XdString",
+   "ct_id": "xxe21o9ojzmy9wxxky1tnmog",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Organization Name",
+   "type": "XdString",
+   "ct_id": "eftvwi5byq6cdtd931qyxzw0",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Name",
+   "type": "XdString",
+   "ct_id": "aa663ivutjf2fs4757t0bbzy",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Version",
+   "type": "XdString",
+   "ct_id": "x0lebwtobgaelj5pev3258sd",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "PROV Agent Type",
+   "type": "XdToken",
+   "ct_id": "i16vqj89it3db7d3c5qjko9p",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  }
+ ]
+}

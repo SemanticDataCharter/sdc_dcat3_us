@@ -1,0 +1,536 @@
+{
+ "@type": "Catalog",
+ "conformsTo": {
+  "@type": "Standard",
+  "title": "DCAT-US 3.0",
+  "identifier": "https://resources.data.gov/dcat-us/3.0.0/definitions/catalog"
+ },
+ "title": "Semantic Data Charter governed data records",
+ "description": "Collections of Governed Data Records, one per published Semantic Data Charter model, each described by the immutable schema its records conform to.",
+ "publisher": {
+  "@type": "Agent",
+  "name": "Axius SDC, Inc.",
+  "@id": "https://axius-sdc.com"
+ },
+ "issued": "2026-09-26",
+ "modified": "2026-09-26",
+ "language": "en",
+ "dataset": [
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/",
+   "@type": "Dataset",
+   "title": "NHANES Participant governed data records",
+   "description": "SDC4 data model for National Health and Nutrition Examination Survey (nhanes_blood_pressure) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model NHANES Participant (dm-xy8upneajsb8vdcmnve01g6g), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-xy8upneajsb8vdcmnve01g6g",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "NHANES Participant in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)",
+    "description": "The immutable schema every NHANES Participant record is validated against: 153 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/epbdfmvxc3gbh5f66hhb3o2m/",
+   "@type": "Dataset",
+   "title": "NHANES Medication governed data records",
+   "description": "SDC4 data model for National Health and Nutrition Examination Survey (nhanes_medications) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model NHANES Medication (dm-epbdfmvxc3gbh5f66hhb3o2m), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-epbdfmvxc3gbh5f66hhb3o2m",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "NHANES Medication in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/epbdfmvxc3gbh5f66hhb3o2m/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-epbdfmvxc3gbh5f66hhb3o2m (NHANES Medication)",
+    "description": "The immutable schema every NHANES Medication record is validated against: 52 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-epbdfmvxc3gbh5f66hhb3o2m.xsd?sha256=26728c92987a1a2db68c120baf72767f00dd034c8e9499b348769a3a7249155f",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "26728c92987a1a2db68c120baf72767f00dd034c8e9499b348769a3a7249155f"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-epbdfmvxc3gbh5f66hhb3o2m (NHANES Medication)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-epbdfmvxc3gbh5f66hhb3o2m.xsd?sha256=26728c92987a1a2db68c120baf72767f00dd034c8e9499b348769a3a7249155f",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 26728c92987a1a2db68c120baf72767f00dd034c8e9499b348769a3a7249155f. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/",
+   "@type": "Dataset",
+   "title": "BRFSS Respondent governed data records",
+   "description": "SDC4 data model for Behavioral Risk Factor Surveillance System (brfss) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model BRFSS Respondent (dm-iymux9kjv8ndbkoi36xzx17i), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-iymux9kjv8ndbkoi36xzx17i",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "BRFSS Respondent in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/iymux9kjv8ndbkoi36xzx17i/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-iymux9kjv8ndbkoi36xzx17i (BRFSS Respondent)",
+    "description": "The immutable schema every BRFSS Respondent record is validated against: 123 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-iymux9kjv8ndbkoi36xzx17i.xsd?sha256=5b89f7a5259ac6aa23b4b2a03b1ba120ae99a9700ed4ac243cb36292d9c48621",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "5b89f7a5259ac6aa23b4b2a03b1ba120ae99a9700ed4ac243cb36292d9c48621"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-iymux9kjv8ndbkoi36xzx17i (BRFSS Respondent)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-iymux9kjv8ndbkoi36xzx17i.xsd?sha256=5b89f7a5259ac6aa23b4b2a03b1ba120ae99a9700ed4ac243cb36292d9c48621",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 5b89f7a5259ac6aa23b4b2a03b1ba120ae99a9700ed4ac243cb36292d9c48621. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/",
+   "@type": "Dataset",
+   "title": "CMS Beneficiary governed data records",
+   "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_beneficiary) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model CMS Beneficiary (dm-fnv3zi2btk3s0sfodjsc25eb), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-fnv3zi2btk3s0sfodjsc25eb",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "CMS Beneficiary in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-fnv3zi2btk3s0sfodjsc25eb (CMS Beneficiary)",
+    "description": "The immutable schema every CMS Beneficiary record is validated against: 98 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-fnv3zi2btk3s0sfodjsc25eb.xsd?sha256=8a9e9ee368b3f0629a3d23d02b56b4f3ff9d7309c58da095bf784f1f4d270fd2",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "8a9e9ee368b3f0629a3d23d02b56b4f3ff9d7309c58da095bf784f1f4d270fd2"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-fnv3zi2btk3s0sfodjsc25eb (CMS Beneficiary)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-fnv3zi2btk3s0sfodjsc25eb.xsd?sha256=8a9e9ee368b3f0629a3d23d02b56b4f3ff9d7309c58da095bf784f1f4d270fd2",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 8a9e9ee368b3f0629a3d23d02b56b4f3ff9d7309c58da095bf784f1f4d270fd2. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/ji1eccop92mlmikwq5gwp7cr/",
+   "@type": "Dataset",
+   "title": "CMS Inpatient Claim governed data records",
+   "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_inpatient) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model CMS Inpatient Claim (dm-ji1eccop92mlmikwq5gwp7cr), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-ji1eccop92mlmikwq5gwp7cr",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "CMS Inpatient Claim in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/ji1eccop92mlmikwq5gwp7cr/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-ji1eccop92mlmikwq5gwp7cr (CMS Inpatient Claim)",
+    "description": "The immutable schema every CMS Inpatient Claim record is validated against: 146 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-ji1eccop92mlmikwq5gwp7cr.xsd?sha256=ef955110f8f789dfc4e29d932061ec854d7199f31138ce37dde17e83bc758923",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "ef955110f8f789dfc4e29d932061ec854d7199f31138ce37dde17e83bc758923"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-ji1eccop92mlmikwq5gwp7cr (CMS Inpatient Claim)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-ji1eccop92mlmikwq5gwp7cr.xsd?sha256=ef955110f8f789dfc4e29d932061ec854d7199f31138ce37dde17e83bc758923",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 ef955110f8f789dfc4e29d932061ec854d7199f31138ce37dde17e83bc758923. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/",
+   "@type": "Dataset",
+   "title": "CMS Outpatient Claim governed data records",
+   "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_outpatient) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model CMS Outpatient Claim (dm-mllwhe842wtnim4ms48qonio), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-mllwhe842wtnim4ms48qonio",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "CMS Outpatient Claim in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/mllwhe842wtnim4ms48qonio/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-mllwhe842wtnim4ms48qonio (CMS Outpatient Claim)",
+    "description": "The immutable schema every CMS Outpatient Claim record is validated against: 141 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-mllwhe842wtnim4ms48qonio.xsd?sha256=0f197b3744a278de7cc447934257b12d3bdb23f61cd403fc0dd464deb33f06d7",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "0f197b3744a278de7cc447934257b12d3bdb23f61cd403fc0dd464deb33f06d7"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-mllwhe842wtnim4ms48qonio (CMS Outpatient Claim)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-mllwhe842wtnim4ms48qonio.xsd?sha256=0f197b3744a278de7cc447934257b12d3bdb23f61cd403fc0dd464deb33f06d7",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 0f197b3744a278de7cc447934257b12d3bdb23f61cd403fc0dd464deb33f06d7. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  },
+  {
+   "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/",
+   "@type": "Dataset",
+   "title": "CMS Prescription Drug Event governed data records",
+   "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_prescriptions) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model CMS Prescription Drug Event (dm-nvemvhvdkctdlm9alwwgcay7), published 2026-09-26. The schema is immutable and is the data dictionary: every variable's name, definition, datatype, units and permitted values, cited by URL and SHA-256 in describedBy and conformsTo.",
+   "identifier": {
+    "@type": "Identifier",
+    "notation": "dm-nvemvhvdkctdlm9alwwgcay7",
+    "schemaAgency": "Axius SDC, Inc."
+   },
+   "contactPoint": {
+    "@type": "Kind",
+    "fn": "Axius SDC, Inc. DCAT contact",
+    "hasEmail": "mailto:contact@axius-sdc.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Axius SDC, Inc.",
+    "@id": "https://axius-sdc.com"
+   },
+   "keyword": [
+    "FAIR Data Demo",
+    "Semantic Data Charter",
+    "SDC4",
+    "governed data record"
+   ],
+   "landingPage": {
+    "@type": "Document",
+    "title": "CMS Prescription Drug Event in the public catalog",
+    "accessURL": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/"
+   },
+   "describedBy": {
+    "@type": "Distribution",
+    "title": "SDC4 schema dm-nvemvhvdkctdlm9alwwgcay7 (CMS Prescription Drug Event)",
+    "description": "The immutable schema every CMS Prescription Drug Event record is validated against: 47 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing.",
+    "downloadURL": "https://sdcstudio.axius-sdc.com/dmlib/dm-nvemvhvdkctdlm9alwwgcay7.xsd?sha256=eda520df8721aae9f3de06f521c1fd5b84324dc752aaedb4b05657d5e3af8c6c",
+    "mediaType": "application/xml",
+    "format": "XSD",
+    "checksum": {
+     "@type": "Checksum",
+     "algorithm": "SHA-256",
+     "checksumValue": "eda520df8721aae9f3de06f521c1fd5b84324dc752aaedb4b05657d5e3af8c6c"
+    },
+    "conformsTo": [
+     {
+      "@type": "Standard",
+      "title": "SDC4 reference model",
+      "identifier": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+     }
+    ],
+    "modified": "2026-09-26",
+    "license": "http://creativecommons.org/licenses/by/3.0/"
+   },
+   "conformsTo": [
+    {
+     "@type": "Standard",
+     "title": "SDC4 schema dm-nvemvhvdkctdlm9alwwgcay7 (CMS Prescription Drug Event)",
+     "identifier": "https://sdcstudio.axius-sdc.com/dmlib/dm-nvemvhvdkctdlm9alwwgcay7.xsd?sha256=eda520df8721aae9f3de06f521c1fd5b84324dc752aaedb4b05657d5e3af8c6c",
+     "modified": "2026-09-26"
+    }
+   ],
+   "issued": "2026-09-26",
+   "modified": "2026-09-26",
+   "inventoried": "2026-10-09",
+   "language": "en",
+   "accessRights": "public",
+   "versionNotes": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). This dataset's schema is pinned by SHA-256 eda520df8721aae9f3de06f521c1fd5b84324dc752aaedb4b05657d5e3af8c6c. See https://semanticdatacharter.com/permanence.html.",
+   "license": "http://creativecommons.org/licenses/by/3.0/",
+   "creator": {
+    "@type": "Agent",
+    "name": "Timothy Cook"
+   }
+  }
+ ],
+ "homepage": {
+  "@type": "Document",
+  "title": "Semantic Data Charter governed data records",
+  "accessURL": "https://semanticdatacharter.com"
+ }
+}

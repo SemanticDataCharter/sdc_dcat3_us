@@ -1,0 +1,612 @@
+{
+ "ct_id": "fnv3zi2btk3s0sfodjsc25eb",
+ "identifier": "dm-fnv3zi2btk3s0sfodjsc25eb",
+ "title": "CMS Beneficiary",
+ "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_beneficiary) — FAIR Data Demo",
+ "project_name": "FAIR Data Demo",
+ "about": "https://semanticdatacharter.com/dmlib/",
+ "created": "2026-09-26T22:03:40.720700Z",
+ "updated": "2026-09-26T22:03:40.721387Z",
+ "artifacts": {
+  "xsd": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/xsd/",
+  "xml": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/xml/",
+  "json": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/json/",
+  "jsonld": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/jsonld/",
+  "html": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/html/",
+  "sha1": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/sha1/",
+  "zip": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/zip/",
+  "ttl": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/ttl/",
+  "shacl": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/shacl/",
+  "gql": "/api/v1/catalog/dm/fnv3zi2btk3s0sfodjsc25eb/gql/"
+ },
+ "components": [
+  {
+   "name": "Audit Agent Reference",
+   "type": "XdString",
+   "ct_id": "dkc2ccj5te35z9gd4bu1blcq",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Entity Reference",
+   "type": "XdString",
+   "ct_id": "gcjyjrnp0wsfoelcp4m05c67",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Identifier",
+   "type": "XdString",
+   "ct_id": "fjhgr5fyqxt2crmg2cb5c513",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Data Subject Reference",
+   "type": "XdString",
+   "ct_id": "sndpbhm3xbd6qtbyxmvh3i0e",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "nf1air1zbj8v9w66jozdxmyl",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Identifier",
+   "type": "XdString",
+   "ct_id": "h3kdbvdtyalpvik97saaf0an",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Location Name",
+   "type": "XdString",
+   "ct_id": "ujir739mf1g8ajeczs9nzh9m",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Recorded At",
+   "type": "XdTemporal",
+   "ct_id": "uwiosm2q9ym3ewr4de910s70",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Action",
+   "type": "XdToken",
+   "ct_id": "ce1c8sydkov8bkv4dgdmwe5x",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Outcome",
+   "type": "XdToken",
+   "ct_id": "rpz1czz06jhpahmfz30rblvp",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Confidentiality",
+   "type": "XdToken",
+   "ct_id": "vbctgmdcwps5b3r3l6sboa6y",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Provenance Agent Type",
+   "type": "XdToken",
+   "ct_id": "jujsdur1igws8orw6tvvlqco",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Purpose of Use",
+   "type": "XdToken",
+   "ct_id": "d1evlz8yvdlwt6ia9fjq4pgj",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Beneficiary Code (DESYNPUF_ID)",
+   "type": "XdString",
+   "ct_id": "zshx6rx7ca1j00eda9kxyh6h",
+   "parent_cluster": "kkdy1kjdruxvx8s1ra8eh231"
+  },
+  {
+   "name": "End-Stage Renal Disease Indicator (BENE_ESRD_IND)",
+   "type": "XdToken",
+   "ct_id": "pczjiz8bjdg20api47gmeq0e",
+   "parent_cluster": "kkdy1kjdruxvx8s1ra8eh231"
+  },
+  {
+   "name": "Condition: Alzheimer's Disease or Related Disorder",
+   "type": "XdToken",
+   "ct_id": "d9z9mcx6gs9zbz4k6f0v738s",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Angina",
+   "type": "XdToken",
+   "ct_id": "o4d67oubyyunugx3la44f53u",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Arthritis",
+   "type": "XdToken",
+   "ct_id": "nd1v8jk7wtm1tthzw1f4987t",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Asthma",
+   "type": "XdToken",
+   "ct_id": "acr1xvqppf1b3rjsrst6tt4p",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Cancer",
+   "type": "XdToken",
+   "ct_id": "ix0my2v2z79s002g0r8orosf",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Chronic Bronchitis",
+   "type": "XdToken",
+   "ct_id": "jyx7rxfktazhgxgq84fxf6wr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Congestive Heart Failure",
+   "type": "XdToken",
+   "ct_id": "hyqlz591lhj54sdt1a1mup70",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: COPD",
+   "type": "XdToken",
+   "ct_id": "mijr18ynaqde2l8jps70l2g6",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Coronary Heart Disease",
+   "type": "XdToken",
+   "ct_id": "udbydjqj76l8kl6mi2s3v7vd",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Depression",
+   "type": "XdToken",
+   "ct_id": "of4crvmnrr3s5q5396kmt0jv",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Diabetes",
+   "type": "XdToken",
+   "ct_id": "fzpb9xr5jg2m3e3dzmvi1v3h",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Emphysema",
+   "type": "XdToken",
+   "ct_id": "sbulkq80j4fkbiql4zgje4qr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Heart Attack",
+   "type": "XdToken",
+   "ct_id": "yshoeps2dm0j1ueusqs825v6",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: High Blood Pressure",
+   "type": "XdToken",
+   "ct_id": "lvockfc8lce5p15wuwxc1kwa",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: High Cholesterol",
+   "type": "XdToken",
+   "ct_id": "gp3jxw3xzs761ll6u5rvc6jr",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition Indicator Basis",
+   "type": "XdToken",
+   "ct_id": "hc79skkfionpgw87dsg5yrgw",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Kidney Disease",
+   "type": "XdToken",
+   "ct_id": "sw5rt0k2uap0e3xgl4rznfgu",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Liver Condition",
+   "type": "XdToken",
+   "ct_id": "atqkooccakulfhkt18c008fx",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Osteoporosis",
+   "type": "XdToken",
+   "ct_id": "l784ggegqcvrpnmw2yvo4il7",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Skin Cancer",
+   "type": "XdToken",
+   "ct_id": "xsohkckyof7y1xj8h1ab4pxu",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Stroke",
+   "type": "XdToken",
+   "ct_id": "zc6p008h5naqev8zngtzvyx9",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Condition: Thyroid Problem",
+   "type": "XdToken",
+   "ct_id": "p8u71b4lhct4ra0szgkex7xo",
+   "parent_cluster": "wa0mknvfo83hej635n48s0ig"
+  },
+  {
+   "name": "Carrier Annual Beneficiary Responsibility",
+   "type": "XdQuantity",
+   "ct_id": "nr2ylxsejuy6awcwqts30rpv",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Carrier Annual Medicare Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "uqamp46mdscugwy7z99jaxsp",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Carrier Annual Primary Payer Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "qbla2qbmgnvijbzpvgsivygy",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Inpatient Annual Beneficiary Responsibility",
+   "type": "XdQuantity",
+   "ct_id": "xk3apd6exhme1to143takg17",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Inpatient Annual Medicare Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "ir7e2d7vwws6yisjvxgfm7ou",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Inpatient Annual Primary Payer Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "afusetixnkfrt5zheumblskw",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Outpatient Annual Beneficiary Responsibility",
+   "type": "XdQuantity",
+   "ct_id": "gxyr702hyrvi5bxp2rn9avd5",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Outpatient Annual Medicare Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "hnvzazgaw60pz193376698lu",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "Outpatient Annual Primary Payer Reimbursement",
+   "type": "XdQuantity",
+   "ct_id": "wl1enu6oomssv6fn1kvvdx9f",
+   "parent_cluster": "vas0n7gpt46lxe3t2klb0ihw"
+  },
+  {
+   "name": "County Code (BENE_COUNTY_CD)",
+   "type": "XdString",
+   "ct_id": "hb937iiq8di6mrtn10j8n1vk",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "State Code (SP_STATE_CODE)",
+   "type": "XdString",
+   "ct_id": "n8s2hvs4vrt5bwdykfzna5a6",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Deceased Indicator",
+   "type": "XdBoolean",
+   "ct_id": "fnr5q1tfq42ez9jia9dqueho",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Deceased Date",
+   "type": "XdTemporal",
+   "ct_id": "vnlhr9c3ykayyegumhb09snf",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Date of Birth",
+   "type": "XdTemporal",
+   "ct_id": "js564tazefb6udqlh12rj04l",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Race (BENE_RACE_CD)",
+   "type": "XdToken",
+   "ct_id": "u5xln0mppl3qk6vhgxdu0wcn",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Sex (BENE_SEX_IDENT_CD)",
+   "type": "XdToken",
+   "ct_id": "u4lkrbqp88mvp1m81ipglaov",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Race/Ethnicity Self-Identification",
+   "type": "XdToken",
+   "ct_id": "u5tietya3u56hbz2kos06ai7",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "Administrative Gender",
+   "type": "XdToken",
+   "ct_id": "gxzbm758mhdz51xd4bawlfhh",
+   "parent_cluster": "frvayvpr4jkzykc8ykchaev6"
+  },
+  {
+   "name": "HMO Coverage Months",
+   "type": "XdCount",
+   "ct_id": "v3kyd703i6kwzmmnasehyiks",
+   "parent_cluster": "shug78mge6b16gz073rt23ih"
+  },
+  {
+   "name": "Hospital Insurance (Part A) Coverage Months",
+   "type": "XdCount",
+   "ct_id": "z7hdfvo8n55ebh3hqs2devzz",
+   "parent_cluster": "shug78mge6b16gz073rt23ih"
+  },
+  {
+   "name": "Part D Plan Coverage Months",
+   "type": "XdCount",
+   "ct_id": "uzjspmfqya7qwbg2vhfdlgzv",
+   "parent_cluster": "shug78mge6b16gz073rt23ih"
+  },
+  {
+   "name": "Supplementary Medical Insurance (Part B) Coverage Months",
+   "type": "XdCount",
+   "ct_id": "xftatfclhnwcyy2k96v7k638",
+   "parent_cluster": "shug78mge6b16gz073rt23ih"
+  },
+  {
+   "name": "Dependent Sequence",
+   "type": "XdString",
+   "ct_id": "ngyypbb7lmlj2g3kibcjqjmn",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Member ID",
+   "type": "XdString",
+   "ct_id": "of5kk46yrln1ok8nuajeg2f8",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Plan Network",
+   "type": "XdString",
+   "ct_id": "ng1e2u43yhfura3vf0ahm609",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Subrogation Indicator",
+   "type": "XdBoolean",
+   "ct_id": "zc3g4e4kjtzehn3kkffkeu29",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Coverage Order",
+   "type": "XdCount",
+   "ct_id": "rcl099nhkwzl6lu24lz9i01r",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Coverage Period End",
+   "type": "XdTemporal",
+   "ct_id": "asmfpl0h2pw2xlldhiydibbn",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Coverage Period Start",
+   "type": "XdTemporal",
+   "ct_id": "onaqlxn6vzh5r1ub5oxn65iv",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Coverage Status",
+   "type": "XdToken",
+   "ct_id": "hicvzztm4xzxnzp9f6tyu016",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Coverage Type",
+   "type": "XdToken",
+   "ct_id": "wpnvu6f56drsy767ucx60scd",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Subscriber Relationship",
+   "type": "XdToken",
+   "ct_id": "zxoxt5fc40bzigieoh044gsy",
+   "parent_cluster": "hbnmrivnia0qrqidvtdryusj"
+  },
+  {
+   "name": "Copay Amount",
+   "type": "XdQuantity",
+   "ct_id": "h4ngotmyyx8yflaxicrxaba8",
+   "parent_cluster": "oc8phvc3wtcfr5x5aauliaih"
+  },
+  {
+   "name": "Copay Type",
+   "type": "XdToken",
+   "ct_id": "fdtpvqw0se658x5m3zormi5v",
+   "parent_cluster": "oc8phvc3wtcfr5x5aauliaih"
+  },
+  {
+   "name": "Coverage Class Name",
+   "type": "XdString",
+   "ct_id": "dro3p4hqu4ovk0uj7uu2upvq",
+   "parent_cluster": "jqrxnqz7o48ay00s8y4ft7ju"
+  },
+  {
+   "name": "Coverage Class Value",
+   "type": "XdString",
+   "ct_id": "zwmu2x9s8tx628rvb1trh0ij",
+   "parent_cluster": "jqrxnqz7o48ay00s8y4ft7ju"
+  },
+  {
+   "name": "Coverage Class Type",
+   "type": "XdToken",
+   "ct_id": "m3m7ow1e7b27ejx6usxtgnbg",
+   "parent_cluster": "jqrxnqz7o48ay00s8y4ft7ju"
+  },
+  {
+   "name": "Activity Description",
+   "type": "XdString",
+   "ct_id": "hhusuzzig19rs46ngz23k5g7",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Identifier",
+   "type": "XdString",
+   "ct_id": "wr06h54xqqw2q9id8i9673jy",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Label",
+   "type": "XdString",
+   "ct_id": "r6hkunjm2q0hlxiknlc9ljix",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Location",
+   "type": "XdString",
+   "ct_id": "uzai5uey5p1fnn9ezj9u6vor",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Type",
+   "type": "XdString",
+   "ct_id": "jjzmhdxvbt97pq81iwqubtxk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Error Message",
+   "type": "XdString",
+   "ct_id": "xlgjqdpwdbn2re3mdh5yy2rk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Had Plan Reference",
+   "type": "XdString",
+   "ct_id": "vhezo2cckpe92x4c3j2memeh",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Used Entity Reference",
+   "type": "XdString",
+   "ct_id": "t0whhrqtnb54te4mk48i1ooj",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Associated With Reference",
+   "type": "XdString",
+   "ct_id": "r48alj7hc3797qfjnf2uj71n",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Ended By Reference",
+   "type": "XdString",
+   "ct_id": "ueb5g1ojzlwwt0mnds5zb6wl",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Informed By Reference",
+   "type": "XdString",
+   "ct_id": "qh84jdzp1kxt85aq4ilo0svk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Started By Reference",
+   "type": "XdString",
+   "ct_id": "ginfqbk7q59ld2r4us8sjnv1",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Ended At",
+   "type": "XdTemporal",
+   "ct_id": "a5scyosu6j84vz350mqyrzl2",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Started At",
+   "type": "XdTemporal",
+   "ct_id": "sa4nl1kbpdr842fkucvfjkpq",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Status",
+   "type": "XdToken",
+   "ct_id": "wl6j4ekcmu4hvt2m12zw4zp8",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Acted On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "og08xf6bu928uuz6t3y0e23f",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Description",
+   "type": "XdString",
+   "ct_id": "gb78cmuyo72hqs5apymdki7l",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Email",
+   "type": "XdString",
+   "ct_id": "qb90a0sp9vvb6c5cbcf236ys",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Identifier",
+   "type": "XdString",
+   "ct_id": "w2ruemcfy35rw60jl1t9dew2",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Name",
+   "type": "XdString",
+   "ct_id": "xxe21o9ojzmy9wxxky1tnmog",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Organization Name",
+   "type": "XdString",
+   "ct_id": "eftvwi5byq6cdtd931qyxzw0",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Name",
+   "type": "XdString",
+   "ct_id": "aa663ivutjf2fs4757t0bbzy",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Version",
+   "type": "XdString",
+   "ct_id": "x0lebwtobgaelj5pev3258sd",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "PROV Agent Type",
+   "type": "XdToken",
+   "ct_id": "i16vqj89it3db7d3c5qjko9p",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  }
+ ]
+}

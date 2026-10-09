@@ -1,0 +1,306 @@
+{
+ "ct_id": "nvemvhvdkctdlm9alwwgcay7",
+ "identifier": "dm-nvemvhvdkctdlm9alwwgcay7",
+ "title": "CMS Prescription Drug Event",
+ "description": "SDC4 data model for CMS DE-SynPUF (Medicare Claims Synthetic Data) (cms_prescriptions) — FAIR Data Demo",
+ "project_name": "FAIR Data Demo",
+ "about": "https://semanticdatacharter.com/dmlib/",
+ "created": "2026-09-26T22:03:43.302837Z",
+ "updated": "2026-09-26T22:03:43.303441Z",
+ "artifacts": {
+  "xsd": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/xsd/",
+  "xml": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/xml/",
+  "json": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/json/",
+  "jsonld": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/jsonld/",
+  "html": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/html/",
+  "sha1": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/sha1/",
+  "zip": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/zip/",
+  "ttl": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/ttl/",
+  "shacl": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/shacl/",
+  "gql": "/api/v1/catalog/dm/nvemvhvdkctdlm9alwwgcay7/gql/"
+ },
+ "components": [
+  {
+   "name": "Audit Agent Reference",
+   "type": "XdString",
+   "ct_id": "dkc2ccj5te35z9gd4bu1blcq",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Entity Reference",
+   "type": "XdString",
+   "ct_id": "gcjyjrnp0wsfoelcp4m05c67",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Identifier",
+   "type": "XdString",
+   "ct_id": "fjhgr5fyqxt2crmg2cb5c513",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Data Subject Reference",
+   "type": "XdString",
+   "ct_id": "sndpbhm3xbd6qtbyxmvh3i0e",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "nf1air1zbj8v9w66jozdxmyl",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Identifier",
+   "type": "XdString",
+   "ct_id": "h3kdbvdtyalpvik97saaf0an",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "System Location Name",
+   "type": "XdString",
+   "ct_id": "ujir739mf1g8ajeczs9nzh9m",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Recorded At",
+   "type": "XdTemporal",
+   "ct_id": "uwiosm2q9ym3ewr4de910s70",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Action",
+   "type": "XdToken",
+   "ct_id": "ce1c8sydkov8bkv4dgdmwe5x",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Audit Event Outcome",
+   "type": "XdToken",
+   "ct_id": "rpz1czz06jhpahmfz30rblvp",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Confidentiality",
+   "type": "XdToken",
+   "ct_id": "vbctgmdcwps5b3r3l6sboa6y",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Provenance Agent Type",
+   "type": "XdToken",
+   "ct_id": "jujsdur1igws8orw6tvvlqco",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Purpose of Use",
+   "type": "XdToken",
+   "ct_id": "d1evlz8yvdlwt6ia9fjq4pgj",
+   "parent_cluster": "t2tvd3wylxrstdeu5aw6gkw1"
+  },
+  {
+   "name": "Beneficiary Code (DESYNPUF_ID)",
+   "type": "XdString",
+   "ct_id": "zshx6rx7ca1j00eda9kxyh6h",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Prescription Drug Event ID (PDE_ID)",
+   "type": "XdString",
+   "ct_id": "ui9e9koh7rrz8irxdv73h1u7",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Days Supply (DAYS_SUPLY_NUM)",
+   "type": "XdCount",
+   "ct_id": "nju57tt8cdn6dcfzncg5v1zl",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Patient Pay Amount",
+   "type": "XdQuantity",
+   "ct_id": "wt1305ryfdwdkz77z50ofelc",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Quantity Dispensed (QTY_DSPNSD_NUM)",
+   "type": "XdQuantity",
+   "ct_id": "rqdlqmr51fx1a5qjai6bu1nf",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Total Prescription Cost",
+   "type": "XdQuantity",
+   "ct_id": "avb9fyvm2htgew2moaj5vhfi",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Service Date (SRVC_DT)",
+   "type": "XdTemporal",
+   "ct_id": "n2osm8po9p6lwp55no0svitb",
+   "parent_cluster": "phxabbr9pk5wzdx0mhzfzhor"
+  },
+  {
+   "name": "Product Service ID (NDC)",
+   "type": "XdString",
+   "ct_id": "t1gpzvw03cgrmv30iw4yjypm",
+   "parent_cluster": "eie1ap0meo1mvtrs8xi2lwdw"
+  },
+  {
+   "name": "Code Display Text",
+   "type": "XdString",
+   "ct_id": "eo5tlfr0576ypknys5alvcn0",
+   "parent_cluster": "eie1ap0meo1mvtrs8xi2lwdw"
+  },
+  {
+   "name": "Code System: NDC",
+   "type": "XdLink",
+   "ct_id": "svv1etij8wmeunnweiqsd0ls",
+   "parent_cluster": "eie1ap0meo1mvtrs8xi2lwdw"
+  },
+  {
+   "name": "Activity Description",
+   "type": "XdString",
+   "ct_id": "hhusuzzig19rs46ngz23k5g7",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Identifier",
+   "type": "XdString",
+   "ct_id": "wr06h54xqqw2q9id8i9673jy",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Label",
+   "type": "XdString",
+   "ct_id": "r6hkunjm2q0hlxiknlc9ljix",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Location",
+   "type": "XdString",
+   "ct_id": "uzai5uey5p1fnn9ezj9u6vor",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Type",
+   "type": "XdString",
+   "ct_id": "jjzmhdxvbt97pq81iwqubtxk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Error Message",
+   "type": "XdString",
+   "ct_id": "xlgjqdpwdbn2re3mdh5yy2rk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Had Plan Reference",
+   "type": "XdString",
+   "ct_id": "vhezo2cckpe92x4c3j2memeh",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Used Entity Reference",
+   "type": "XdString",
+   "ct_id": "t0whhrqtnb54te4mk48i1ooj",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Associated With Reference",
+   "type": "XdString",
+   "ct_id": "r48alj7hc3797qfjnf2uj71n",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Ended By Reference",
+   "type": "XdString",
+   "ct_id": "ueb5g1ojzlwwt0mnds5zb6wl",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Informed By Reference",
+   "type": "XdString",
+   "ct_id": "qh84jdzp1kxt85aq4ilo0svk",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Was Started By Reference",
+   "type": "XdString",
+   "ct_id": "ginfqbk7q59ld2r4us8sjnv1",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Ended At",
+   "type": "XdTemporal",
+   "ct_id": "a5scyosu6j84vz350mqyrzl2",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Started At",
+   "type": "XdTemporal",
+   "ct_id": "sa4nl1kbpdr842fkucvfjkpq",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Activity Status",
+   "type": "XdToken",
+   "ct_id": "wl6j4ekcmu4hvt2m12zw4zp8",
+   "parent_cluster": "vmikfu0irht9fmq7q02t3oqs"
+  },
+  {
+   "name": "Acted On Behalf Of Reference",
+   "type": "XdString",
+   "ct_id": "og08xf6bu928uuz6t3y0e23f",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Description",
+   "type": "XdString",
+   "ct_id": "gb78cmuyo72hqs5apymdki7l",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Email",
+   "type": "XdString",
+   "ct_id": "qb90a0sp9vvb6c5cbcf236ys",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Identifier",
+   "type": "XdString",
+   "ct_id": "w2ruemcfy35rw60jl1t9dew2",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Name",
+   "type": "XdString",
+   "ct_id": "xxe21o9ojzmy9wxxky1tnmog",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Agent Organization Name",
+   "type": "XdString",
+   "ct_id": "eftvwi5byq6cdtd931qyxzw0",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Name",
+   "type": "XdString",
+   "ct_id": "aa663ivutjf2fs4757t0bbzy",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "Software Version",
+   "type": "XdString",
+   "ct_id": "x0lebwtobgaelj5pev3258sd",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  },
+  {
+   "name": "PROV Agent Type",
+   "type": "XdToken",
+   "ct_id": "i16vqj89it3db7d3c5qjko9p",
+   "parent_cluster": "c179ilk2ns15cd5rzzdfd6f6"
+  }
+ ]
+}
