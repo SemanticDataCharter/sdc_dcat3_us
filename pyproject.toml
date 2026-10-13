@@ -4,28 +4,30 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sdcdcatus"
-version = "4.0.1"
+version = "4.1.0"
 description = "Describe published Semantic Data Charter models' governed data records in a DCAT-US 3.0 catalog (data.json)."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Axius SDC, Inc." }]
-keywords = ["dcat-us", "dcat", "data.json", "data.gov", "sdc", "fair"]
+keywords = ["dcat-us", "dcat", "data.json", "data.gov", "sdc", "fair", "mcp"]
 
 dependencies = [
     # the model's package, read once for every projection
-    "sdcreader>=4.1,<5",
+    "sdcreader>=4.2,<5",
     "lxml>=5.0",
     "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
-fetch = ["sdcreader>=4.1,<5"]
+fetch = ["sdcreader>=4.2,<5"]
 # The tests run GSA's own validator from the pinned snapshot in data/; it needs jsonschema with format checking.
 dev = ["pytest>=8.0", "requests>=2.31", "jsonschema[format]>=4.18"]
 
 [project.scripts]
 sdcdcatus = "sdcdcatus.cli:main"
+# The MCP server; the registry launches `sdcdcatus mcp` through the CLI.
+sdcdcatus-mcp = "sdcdcatus.mcp_server:main"
 
 [project.urls]
 Homepage = "https://github.com/SemanticDataCharter/sdc_dcat3_us"
