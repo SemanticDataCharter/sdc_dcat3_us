@@ -1,5 +1,7 @@
 # sdc_dcat3_us
 
+<!-- mcp-name: io.github.SemanticDataCharter/sdcdcatus -->
+
 One Semantic Data Charter model, described in DCAT-US 3.0.
 
 `sdcdcatus` reads a published SDC model's package and writes the `data.json` Catalog that DCAT-US 3.0, the United
@@ -134,6 +136,18 @@ the next implementer spends the day on their own catalog rather than on these.
 - **The registry method.** Each definition's `$id` is `https://resources.data.gov/dcat-us/3.0.0/definitions/<class>`
   and references are the path `/dcat-us/3.0.0/definitions/<class>`; a `referencing` registry built from the directory
   resolves them, as `test_json_schema.py` does. The online validator agreed with the script on the sample.
+
+## MCP server
+
+`sdcdcatus` is also an MCP server, registered as `io.github.SemanticDataCharter/sdcdcatus`, so an assistant that can read a
+published model with `sdcreader` can ask for its DCAT-US 3.0 description. One tool, `write_catalog`, over the same
+function the CLI calls; stdio; read-only apart from the document it returns; no account; no tool takes a URL (the
+catalog host is fixed at start with `--host`). The protocol scaffold is `sdcreader.mcp`, shared by every SDC
+projection server.
+
+```
+uvx sdcdcatus mcp            # or: sdcdcatus-mcp, or sdcdcatus mcp
+```
 
 ## Layout
 
