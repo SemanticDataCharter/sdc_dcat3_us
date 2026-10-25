@@ -7,5 +7,5 @@ Schema at a pinned commit.
 from sdcreader import ModelPackage, load_package, fetch_package, read_model
 from .dcatus import write_catalog, load_declared, DeclaredInputError
 
-__version__ = "4.1.0"
+__version__ = "4.1.1"
 __all__ = ["ModelPackage", "load_package", "fetch_package", "read_model", "write_catalog", "load_declared", "DeclaredInputError", "__version__"]
